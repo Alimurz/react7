@@ -1,0 +1,62 @@
+@import url(../../Assets/Typography.scss);
+.back {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images5.alphacoders.com/132/1325121.png);
+
+    .text-block1 {
+        background-color: rgb(255, 255, 255);
+        width: 600px;
+        margin: 100px 0 50px;
+        border-radius: 25px;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .text-block2 {
+        @extend .text-block1;
+        width: 300px;
+    }
+}
+.main-title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.art-style{
+    width: 200px;
+}   
+.block-1-title{
+    font-size:16px;
+    font-weight: bold;
+}
+.block-1-subtitle{
+@extend .block-2-title;
+font-weight: 400;
+color: rgb(72, 72, 72);
+}
+
+.block-2-title{
+   @extend .block-1-title
+}
+.block-2-subtitle{
+    font-size:16px;
+    font-weight: bold;
+font-weight: 400;
+color: rgb(72, 72, 72);
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: rgb(32, 21, 53)
+}
+.footer-text{
+    color: white;
+}

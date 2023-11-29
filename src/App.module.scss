@@ -1,0 +1,164 @@
+@import './Assets/Typography.scss';
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $main-font-color;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color:$header-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  font-size: $font20;
+  padding: 10px 7px;
+  border-bottom: 1px solid white;
+  box-shadow: 0px 5px 5px 5px white;
+}
+
+.link2 {
+  padding: 0 $font20;
+}
+
+.link2:hover {
+  background-color: $bg-hover ;
+  text-decoration: underline;
+  color: $hover-font-color;
+  border-radius: 25px;
+}
+
+
+
+// AboutUs Page
+.background {
+  display: flex;
+  justify-content: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://images.unsplash.com/photo-1583144568008-76743354fa5a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGFyayUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D);
+
+  .text {
+    background-color: rgb(195, 185, 185);
+    width: 600px;
+    margin: 200px;
+    border-radius: 25px;
+    padding: 10px 0;
+  }
+}
+.us-title-1{
+font-size: 20px;
+font-weight: 500;
+}
+.us-title-2{
+  @extend .us-title-1;
+  color:azure;
+}
+.us-title-3{
+  @extend .us-title-2;
+  color: blue;
+}
+.us-subtitle-1{
+  font-size: 15px;
+  font-weight: 300;
+  }
+  .us-subtitle-2{
+    @extend .us-subtitle-1;
+    color:azure;
+  }
+  .us-subtitle-3{
+    @extend .us-subtitle-1;
+    color: blue;
+  }
+
+  .us-body-1{
+    font-size: 12px;
+    font-weight: 200;
+    }
+    .us-body-2{
+      @extend .us-body-1;
+      color:azure;
+    }
+    .us-body-3{
+      @extend .us-body-1;
+      color: blue;
+    }
+
+
+
+
+// SingIn Page
+.center {
+  display: flex;
+  justify-content: center;
+  padding: 171px 0;
+  background-color: $header-bg;
+}
+.avatar-icon{
+  width: 40px;
+  height: 40px;
+}
+.sign {
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 40%;
+  padding: 10px;
+  background-color:$bg-recent;
+}
+
+.inputs-label {
+  font-size: $font20;
+}
+
+.forms-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.forms-item1{
+  @extend .forms-item;
+  margin: 10px 0
+}
+.sign-label{
+  @extend .inputs-label;
+  margin: 10px;
+}
+
+.forms-input1{
+  @extend .forms-input;
+  margin: 10px  ;
+}
+
+.forms-input {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.sign:hover {
+  background-color: rgb(250, 249, 247);
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+// ErrorPage
+.error-page-bg{
+  @extend .background;
+  background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-error-page-not-found-404-background-picture-image_1177786.jpg);
+  .error-page-text{
+    @extend .text;
+    font-size: $font20;
+  }
+}
+
